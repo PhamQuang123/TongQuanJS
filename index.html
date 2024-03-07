@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Bài nâng cao 1</h3>
+<input type="text" id="inp1" onchange="handleChange()">
+<h3>Bài nâng cao 2</h3>
+<button onclick="sum2()">Tính tổng</button>
+<h3>Ba nâng cao 4</h3>
+<input type="text" id="inp2">
+<input type="text" id="inp3">
+<button onclick="sum4()">SUM</button>
+<script>
+    // Bài 1
+    let a = 10;
+    let b = 5;
+    let c = 20;
+    let d = 15;
+    let result = a + b * c - d / 2;
+    console.log("kết quả bài 1 là:" + " " + result);
+    // alert("kết quả bài 1 là:" + " " + result);
+    // document.write(result);
+
+    // Bài 2
+    let x = +prompt("Nhập số thứ nhất: ")
+    let y = +prompt("Nhập số tứ 2: ")
+    let sum = x + y;
+    let mul = x * y;
+    let hieu = x - y;
+    let div = x / y;
+    console.log(`kết quả bài 2 tổng 2 số ${x} và ${y} là: ${sum}`)
+    console.log("kết quả bài 2 tích 2 số là:" + " " + mul)
+    console.log("kết quả bài 2 hiệu 2 số là:" + " " + hieu)
+    console.log("kết quả bài 2 thương 2 số là:" + " " + div)
+
+    // Bài nâng cao 1
+    function handleChange() {
+        let a = document.getElementById("inp1").value;
+        console.log("giá trị ô input là: " + a);
+    }
+
+    // Bài nâng cao 2
+    function sum2() {
+        let tong2 = a + b;
+        console.log("Tổng 2 số a và b là: " + tong2);
+    }
+
+    // Bài nâng cao 4
+    function sum4() {
+        let number1 = +document.getElementById("inp2").value;
+        let number2 = +document.getElementById("inp3").value;
+        let tong = number1 + number2;
+        console.log(`Tổng 2 số ${number1} và ${number2} là: ${tong}`)
+    }
+
+</script>
+</body>
+</html>
